@@ -24,3 +24,11 @@ header h1 {
     font-family: 'Bebas Neue', cursive;
     transform: scaleX(1.4);
 }
+
+#nouse {
+    display: hidden;
+}
+
+#addressText {
+    word-wrap: normal;
+}
