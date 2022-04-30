@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -19,4 +21,62 @@ header {
 
 header h1 {
     color: white;
+    font-family: 'Bebas Neue', cursive;
+    transform: scaleX(1.4);
+}
+
+#bookSlot {
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 30vh;
+}
+
+#vaccineimg {
+    height: 20vh;
+}
+
+#bookSlot button {
+    padding: 7px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+}
+
+#submitSlot {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    margin-left: 45vw;
+    font-family: 'Cairo', sans-serif;
+}
+
+.data {
+    margin: 0 0 15px 5vw;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+}
+
+.data input {
+    padding: 5px;
 }
