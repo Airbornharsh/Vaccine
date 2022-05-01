@@ -48,6 +48,7 @@
         overflow-wrap: break-word;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
+        padding: 3px;
     }
     
     #table table tr th {
