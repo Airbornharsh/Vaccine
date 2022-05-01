@@ -52,7 +52,6 @@ class Vaccine {
     }
 
     UpdatingSubmission() {
-        console.log("sorry");
         alert("SUBMITTED");
         document.location.reload();
     }
