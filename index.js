@@ -9,7 +9,7 @@ class Vaccine {
         this.email = document.getElementById("email");
         this.age = document.getElementById("age");
         this.phone = document.getElementById("phone");
-        this.adhaarNumber = document.getElementById("adhaarNumber");
+        this.adhaar = document.getElementById("adhaarNumber");
         this.address = document.getElementById("address");
         this.date = document.getElementById("date");
         this.patientdata = [];
@@ -26,7 +26,12 @@ class Vaccine {
 
     Submitting() {
         this.SubmitBt.addEventListener("click", () => {
-            this.submitted();
+            if (this.name.value && this.email.value && this.age.value && this.phone.value && this.adhaar.value && this.address.value && this.date.value) {
+                this.submitted();
+            } else {
+                this.Submitting();
+                alert("Fill Properly");
+            }
         });
     }
 
@@ -36,14 +41,20 @@ class Vaccine {
             email: this.email.value,
             age: this.age.value,
             phone: this.phone.value,
-            adhaarNumber: this.adhaarNumber.value,
+            adhaar: this.adhaar.value,
             address: this.address.value,
             date: this.date.value
         };
 
         this.patientdata.push(patient);
-
         localStorage.setItem(patient.name, JSON.stringify(patient));
+        this.UpdatingSubmission();
+    }
+
+    UpdatingSubmission() {
+        console.log("sorry");
+        alert("SUBMITTED");
+        document.location.reload();
     }
 }
 
@@ -54,5 +65,4 @@ class App {
     }
 }
 
-App.start();
 App.start();

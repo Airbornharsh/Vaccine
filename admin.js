@@ -14,7 +14,7 @@ class VaccineChart {
             copiedTemplate.querySelector(".email").textContent = JSON.parse(window.localStorage.getItem(key)).email;
             copiedTemplate.querySelector(".age").textContent = JSON.parse(window.localStorage.getItem(key)).age;
             copiedTemplate.querySelector(".phone").textContent = JSON.parse(window.localStorage.getItem(key)).phone;
-            copiedTemplate.querySelector(".adhaar").textContent = JSON.parse(window.localStorage.getItem(key)).adhaarNumber;
+            copiedTemplate.querySelector(".adhaar").textContent = JSON.parse(window.localStorage.getItem(key)).adhaar;
             copiedTemplate.querySelector(".address").textContent = JSON.parse(window.localStorage.getItem(key)).address;
             copiedTemplate.querySelector(".date").textContent = JSON.parse(window.localStorage.getItem(key)).date;
             this.tableBody.append(copiedTemplate);
